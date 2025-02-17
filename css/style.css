@@ -1,0 +1,176 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+.header {
+    background: black;
+    color: white;
+    padding: 1.5rem 0;
+    width: 100%; /* Full-width background */
+}
+
+.header h1 {
+    font-size: 1.5rem;
+}
+
+.header-content {
+    width: 80%; /* Aligns with main content */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main Content Alignment */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 4vw 0;
+}
+
+/* About Section with Background Image */
+.about {
+    background: url('/images/traxOutside.jpg') center/cover no-repeat;
+    color: white;
+    height: 30vw;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Darkened & Blurred Overlay */
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+/* Ensures text stays on top */
+.about h2, .about p {
+    position: relative;
+    z-index: 1;
+}
+
+.about h2 {
+    margin-bottom: 2vw;
+    font-size: 1.5rem;
+}
+
+.about p {
+    font-size: 1rem;
+}
+
+.about-container {
+    width: 80%;
+}
+
+/* Vehicles Section */
+.car-list {
+    display: grid;
+    gap: 1.5vw;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start; /* Ensures independent height expansion */
+}
+
+@media (max-width: 1024px) {
+    .car-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .car-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Car Cards */
+.car-card {
+    border: 0.1rem solid #ccc;
+    padding: 1.5vw;
+    margin: 1vw 0;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+/* Ensures images aren't rounded */
+.car-card img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+}
+
+/* Car Details Section */
+.car-details {
+    margin-top: 0.8rem;
+    padding: 0.8rem;
+    display: none;
+}
+
+/* Adds space between car details and gallery */
+.car-details p {
+    margin-bottom: 1rem;
+}
+
+/* Gallery: Now Uses a 2-Column Grid with Uniform Images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+/* Ensures uniform image size in gallery */
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: #f1f1f1;
+    width: 100%;
+    padding: 2vw 0;
+}
+.footer-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}

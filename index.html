@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Highland Motor Sales Inc.</title>
+        <!-- <link rel="icon" type="image/x-icon" href="/images/"> -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1>Highland Motor Sales Inc.</h1>
+                </div>
+                <div class="header-right">
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+        </header>
+        
+        <main id="vehicles">
+            <div id="about" class="about">
+                <div class="about-container">
+                    <h2>Welcome to Highland Motor Sales Inc.</h2>
+                    <p>At Car Dealership, we pride ourselves on offering high-quality vehicles at unbeatable prices.</p>
+                </div>
+            </div>
+            
+            <div  class="container">
+            <h2>Our Vehicles</h2>
+            <div class="car-list">
+                <div class="car-card">
+                    <img src="images/trax.jpg">
+                    <h3>2024 Chevrolet Trax</h3>
+                    <p>10,000 miles</p>
+                    <div class="car-details">
+                        <p>More details about this car...</p>
+                        <div class="gallery">
+                            <img class="gallery-img" src="images/traxOutside.jpg" onclick="openLightbox(this.src)">
+                            <img class="gallery-img" src="images/traxInterior.jpg" onclick="openLightbox(this.src)">
+                            <img class="gallery-img" src="images/trax.jpg" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/trax.jpg">
+                    <h3>2024 Chevrolet Trax</h3>
+                    <p>10,000 miles</p>
+                    <div class="car-details">
+                        <p>More details about this car...</p>
+                        <div class="gallery">
+                            <img class="gallery-img" src="images/traxOutside.jpg" onclick="openLightbox(this.src)">
+                            <img class="gallery-img" src="images/traxInterior.jpg" onclick="openLightbox(this.src)">
+                            <img class="gallery-img" src="images/trax.jpg" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/trax.jpg">
+                    <h3>2024 Chevrolet Trax</h3>
+                    <p>10,000 miles</p>
+                    <div class="car-details">
+                        <p>More details about this car...</p>
+                        <div class="gallery">
+                            <img class="gallery-img" src="images/traxOutside.jpg" onclick="openLightbox(this.src)">
+                            <img class="gallery-img" src="images/traxInterior.jpg" onclick="openLightbox(this.src)">
+                            <img class="gallery-img" src="images/trax.jpg" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/trax.jpg">
+                    <h3>2024 Chevrolet Trax</h3>
+                    <p>10,000 miles</p>
+                    <div class="car-details">
+                        <p>More details about this car...</p>
+                        <div class="gallery">
+                            <img class="gallery-img" src="images/traxOutside.jpg" onclick="openLightbox(this.src)">
+                            <img class="gallery-img" src="images/traxInterior.jpg" onclick="openLightbox(this.src)">
+                            <img class="gallery-img" src="images/trax.jpg" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+        
+        <footer id="contact" class="footer">
+            <div class="footer-content">
+                <p>Email: contact@cardealership.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Car St, Auto City</p>
+            </div>
+        </footer>
+        
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+    </html>
